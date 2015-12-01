@@ -6,6 +6,13 @@
       </workItemHandlers>
     </ksession>
   </kbase>
+  <kbase name="razduzenjekbase" default="false" eventProcessingMode="stream" equalsBehavior="identity">
+    <ksession name="razduzenjeksession" type="stateful" default="true" clockType="realtime">
+      <workItemHandlers>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.RazduzenjeServis" name="RazduzenjeServis"/>
+      </workItemHandlers>
+    </ksession>
+  </kbase>
   <kbase name="sredstvokbase" default="false" eventProcessingMode="stream" equalsBehavior="identity">
     <ksession name="sredstvoksession" type="stateful" default="true" clockType="realtime">
       <workItemHandlers>
