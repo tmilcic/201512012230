@@ -9,6 +9,42 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
   ],
   
   [
+   "name" : "InventuraServis",
+    "displayName" : "Upisivanje inventurnih podataka u BP",
+    "icon" : "defaultemailicon.gif"
+  ],
+  
+  [
+   "name" : "LokacijaServis",
+    "displayName" : "Upisivanje podataka o lokaciji u BP",
+    "icon" : "defaultemailicon.gif"
+  ],
+  
+  [
+   "name" : "DjelatnikServis",
+    "displayName" : "Upisivanje podataka o djelatniku u BP",
+    "icon" : "defaultemailicon.gif"
+  ],
+  
+  [
+   "name" : "SredstvoServis",
+    "displayName" : "Upisivanje podataka o sredstvu u BP",
+    "icon" : "defaultemailicon.gif"
+  ],
+  
+  [
+   "name" : "RazduzenjeServis",
+    "displayName" : "Upisivanje podataka o razduzenju u BP",
+    "icon" : "defaultemailicon.gif"
+  ],
+  
+  [
+   "name" : "ZaduzenjeServis",
+    "displayName" : "Upisivanje podataka o zaduzenju u BP",
+    "icon" : "defaultemailicon.gif"
+  ],
+  
+  [
     "name" : "Email",
     "parameters" : [
       "From" : new StringDataType(),
