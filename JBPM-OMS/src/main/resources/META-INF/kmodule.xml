@@ -13,6 +13,13 @@
       </workItemHandlers>
     </ksession>
   </kbase>
+  <kbase name="zaduzenjekbase" default="false" eventProcessingMode="stream" equalsBehavior="identity">
+    <ksession name="zaduzenjeksession" type="stateful" default="true" clockType="realtime">
+      <workItemHandlers>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.ZaduzenjeServis" name="ZaduzenjeServis"/>
+      </workItemHandlers>
+    </ksession>
+  </kbase>
   <kbase name="sredstvokbase" default="false" eventProcessingMode="stream" equalsBehavior="identity">
     <ksession name="sredstvoksession" type="stateful" default="true" clockType="realtime">
       <workItemHandlers>
