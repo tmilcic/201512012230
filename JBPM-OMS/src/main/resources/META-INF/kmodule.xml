@@ -1,4 +1,11 @@
 <kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <kbase name="inventurakbase" default="false" eventProcessingMode="stream" equalsBehavior="identity">
+    <ksession name="inventuraksession" type="stateful" default="true" clockType="realtime">
+      <workItemHandlers>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.InventuraServis" name="InventuraServis"/>
+      </workItemHandlers>
+    </ksession>
+  </kbase>
   <kbase name="prijavakbase" default="true" eventProcessingMode="stream" equalsBehavior="identity">
     <ksession name="prijavaksession" type="stateful" default="true" clockType="realtime">
       <workItemHandlers>
