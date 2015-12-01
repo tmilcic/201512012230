@@ -20,4 +20,11 @@
       </workItemHandlers>
     </ksession>
   </kbase>
+  <kbase name="djelatnikkbase" default="false" eventProcessingMode="stream" equalsBehavior="identity">
+    <ksession name="djelatnikksession" type="stateful" default="true" clockType="realtime">
+      <workItemHandlers>
+        <workItemHandler type="org.jugvale.jbpm.workitemhandler.DjelatnikServis" name="DjelatnikServis"/>
+      </workItemHandlers>
+    </ksession>
+  </kbase>
 </kmodule>
